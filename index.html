@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ VERRAKO MIX</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-lg" style="box-shadow: 0 0 20px fuchsia;">
+    <div class="container">
+      <a id="textoLogo" class="navbar-brand d-flex align-items-center neon-text glitch" href="#">
+        <img src="img/logo.jpg" alt="Logo DJ" width="75" height="50" class="me-2" style="filter: drop-shadow(0 0 5px fuchsia);">
+        DJ VERRAKO MIX
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a id="links" class="nav-link neon-hover neon-text glitch" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a id="links" class="nav-link neon-hover neon-text glitch" href="#sobre">Sobre mí</a></li>
+          <li class="nav-item"><a id="links" class="nav-link neon-hover neon-text glitch" href="#paquetes">Paquetes</a></li>
+          <li class="nav-item"><a id="links" class="nav-link neon-hover neon-text glitch" href="#eventos">Eventos</a></li>
+          <li class="nav-item"><a id="links" class="nav-link neon-hover neon-text glitch" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a id="links" class="nav-link neon-hover neon-text glitch" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header id="inicio" class="hero-section">
+    <video autoplay muted loop class="background-video">
+      <source src="hero1.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content text-center">
+      <h1 id="hero-title" class="neon-text glitch"></h1>
+      <h1 class="glitch neon-text" data-text="DJ NeonBeat">DJ VERRAKO MIX</h1>
+      <p class="typed-text"></p>
+      <a href="#paquetes" class="btn btn-neon mt-3">Escucha mi música</a>
+    </div>
+  </header>
+
+  <!-- SOBRE MÍ -->
+  <section id="sobre" class="py-5 text-white bg-black">
+    <div class="container" data-aos="fade-up">
+      <div class="row align-items-center">
+        
+        <!-- TARJETA DE INFORMACIÓN -->
+        <div class="col-lg-6 mb-4">
+          <div class="card bg-dark text-white p-4 neon-border shadow-lg" style="border-radius: 20px;">
+            <h2 class="neon-text glitch mb-3 text-center">Sobre mí</h2>
+            <p class="lead text-center">
+              Soy <strong>DJ VRRAKO MIX</strong>, fusionando los mejores géneros musicales para disfrutar al máximo.<br>
+              Participando en todo tipo de eventos, sociales, empresariales y masivos.<br>
+              ¡Mi música enciende la fiesta!
+            </p>
+            <div class="text-center mt-3">
+              <button class="btn btn-outline-light neon-btn" onclick="mostrarInfoAdicional()">Ver más</button>
+            </div>
+          </div>
+        
+          <!-- Tarjeta oculta con más información -->
+          <div id="info-adicional" class="card bg-dark text-white p-4 neon-border shadow-lg mt-4 d-none" style="border-radius: 20px;">
+            <h3 class="neon-text mb-3 text-center">Participaciones destacadas</h5>
+            <p class="lead text-center">
+              Participación en la Feria de San Isidro, presentaciones y sonorizaciones con bandas de Rock, Ska, y Rock Pop.<br>
+              También en bailes sonideros, presentándonos en auditorios y galerías artísticas, amenizando congresos y reuniones políticas.
+            </p>
+          </div>
+        </div>        
+        
+        <!-- IMÁGENES ESTILO BARAJA -->
+        <div class="col-lg-6 d-flex justify-content-center position-relative">
+          <div class="image-stack">
+            <img src="img/i1.jpg" class="stack-img img1" alt="DJ 1">
+            <img src="img/i2.jpg" class="stack-img img2" alt="DJ 2">
+            <img src="img/i3.jpg" class="stack-img img3" alt="DJ 3">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- MÚSICA -->
+  <section id="paquetes" class="py-5 bg-dark text-white">
+    <div class="container" data-aos="zoom-in">
+      <h2 class="text-center neon-text">Paquetes</h2>
+      <div class="text-center mt-4">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6VdMW310YC7" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTOS -->
+  <section id="eventos" class="py-5 bg-black text-white">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center neon-text">Eventos Destacados</h2>
+      <div class="row mt-4">
+        
+        <!-- Tarjeta de evento con video -->
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card event-card h-100 neon-border shadow-lg">
+            <video class="card-video" controls>
+              <source src="v2.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+            <div class="card-body text-center">
+              <h5 class="card-title neon-text">DJ VERRAKO MIX</h5>
+              <p class=" neon-text">El mejor ambiente para tus fiestas</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Duplicar para más eventos -->
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card event-card h-100 neon-border shadow-lg">
+            <video class="card-video" controls>
+              <source src="v1.mp4" type="video/mp4">
+            </video>
+            <div class="card-body text-center">
+              <h5 class="card-title neon-text">DJ VERRAKO MIX</h5>
+              <p class=" neon-text">El mejor ambiente para tus fiestas</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card event-card h-100 neon-border shadow-lg">
+            <video class="card-video" controls>
+              <source src="v3.mp4" type="video/mp4">
+            </video>
+            <div class="card-body text-center">
+              <h5 class="card-title neon-text">DJ VERRAKO MIX</h5>
+              <p class=" neon-text">El mejor ambiente para tus fiestas</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      <div class="row mt-4">
+        
+        <!-- Tarjeta de evento con video -->
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card event-card h-100 neon-border shadow-lg">
+            <video class="card-video" controls>
+              <source src="v4.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+            <div class="card-body text-center">
+              <h5 class="card-title neon-text">DJ VERRAKO MIX</h5>
+              <p class=" neon-text">El mejor ambiente para tus fiestas</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Duplicar para más eventos -->
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card event-card h-100 neon-border shadow-lg">
+            <video class="card-video" controls>
+              <source src="v5.mp4" type="video/mp4">
+            </video>
+            <div class="card-body text-center">
+              <h5 class="card-title neon-text">DJ VERRAKO MIX</h5>
+              <p class=" neon-text">El mejor ambiente para tus fiestas</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card event-card h-100 neon-border shadow-lg">
+            <video class="card-video" controls>
+              <source src="v6.mp4" type="video/mp4">
+            </video>
+            <div class="card-body text-center">
+              <h5 class="card-title neon-text">DJ VERRAKO MIX</h5>
+              <p class=" neon-text">El mejor ambiente para tus fiestas</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      <div class="row mt-4">
+        
+        <!-- Tarjeta de evento con video -->
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card event-card h-100 neon-border shadow-lg">
+            <video class="card-video" controls>
+              <source src="v7.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+            <div class="card-body text-center">
+              <h5 class="card-title neon-text">DJ VERRAKO MIX</h5>
+              <p class=" neon-text">El mejor ambiente para tus fiestas</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Duplicar para más eventos -->
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card event-card h-100 neon-border shadow-lg">
+            <video class="card-video" controls>
+              <source src="v8.mp4" type="video/mp4">
+            </video>
+            <div class="card-body text-center">
+              <h5 class="card-title neon-text">DJ VERRAKO MIX</h5>
+              <p class=" neon-text">El mejor ambiente para tus fiestas</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card event-card h-100 neon-border shadow-lg">
+            <video class="card-video" controls>
+              <source src="v9.mp4" type="video/mp4">
+            </video>
+            <div class="card-body text-center">
+              <h5 class="card-title neon-text">DJ VERRAKO MIX</h5>
+              <p class=" neon-text">El mejor ambiente para tus fiestas</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      <div class="row mt-4">
+        
+        <!-- Tarjeta de evento con video -->
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card event-card h-100 neon-border shadow-lg">
+            <video class="card-video" controls>
+              <source src="v10.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+            <div class="card-body text-center">
+              <h5 class="card-title neon-text">DJ VERRAKO MIX</h5>
+              <p class=" neon-text">El mejor ambiente para tus fiestas</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Duplicar para más eventos -->
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card event-card h-100 neon-border shadow-lg">
+            <video class="card-video" controls>
+              <source src="v11.mp4" type="video/mp4">
+            </video>
+            <div class="card-body text-center">
+              <h5 class="card-title neon-text">DJ VERRAKO MIX</h5>
+              <p class=" neon-text">El mejor ambiente para tus fiestas</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card event-card h-100 neon-border shadow-lg">
+            <video class="card-video" controls>
+              <source src="v12.mp4" type="video/mp4">
+            </video>
+            <div class="card-body text-center">
+              <h5 class="card-title neon-text">DJ VERRAKO MIX</h5>
+              <p class=" neon-text">El mejor ambiente para tus fiestas</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      <div class="row mt-4">
+        
+        <!-- Tarjeta de evento con video -->
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card event-card h-100 neon-border shadow-lg">
+            <video class="card-video" controls>
+              <source src="v13.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+            <div class="card-body text-center">
+              <h5 class="card-title neon-text">DJ VERRAKO MIX</h5>
+              <p class=" neon-text">El mejor ambiente para tus fiestas</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Duplicar para más eventos -->
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card event-card h-100 neon-border shadow-lg">
+            <video class="card-video" controls>
+              <source src="v14.mp4" type="video/mp4">
+            </video>
+            <div class="card-body text-center">
+              <h5 class="card-title neon-text">DJ VERRAKO MIX</h5>
+              <p class=" neon-text">El mejor ambiente para tus fiestas</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card event-card h-100 neon-border shadow-lg">
+            <video class="card-video" controls>
+              <source src="v15.mp4" type="video/mp4">
+            </video>
+            <div class="card-body text-center">
+              <h5 class="card-title neon-text">DJ VERRAKO MIX</h5>
+              <p class=" neon-text">El mejor ambiente para tus fiestas</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria" class="py-5 bg-dark text-white">
+    <div class="container" data-aos="fade-in">
+      <h2 class="text-center neon-text mb-4">Galería</h2>
+      <div class="marquee-container">
+        <div class="marquee-track">
+          <img src="img/i4.jpg" alt="Galería 1" class="gallery-marquee-img">
+          <img src="img/i5.jpg" alt="Galería 2" class="gallery-marquee-img">
+          <img src="img/i6.jpg" alt="Galería 3" class="gallery-marquee-img">
+          <img src="img/i7.jpg" alt="Galería 4" class="gallery-marquee-img">
+          <img src="img/i8.jpg" alt="Galería 5" class="gallery-marquee-img">
+          <img src="img/i9.jpg" alt="Galería 5" class="gallery-marquee-img">
+          <img src="img/i10.jpg" alt="Galería 5" class="gallery-marquee-img">
+          <img src="img/i11.jpg" alt="Galería 1" class="gallery-marquee-img">
+          <img src="img/i12.jpg" alt="Galería 2" class="gallery-marquee-img">
+          <img src="img/i13.jpg" alt="Galería 3" class="gallery-marquee-img">
+          <img src="img/i14.jpg" alt="Galería 4" class="gallery-marquee-img">
+          <img src="img/i15.jpg" alt="Galería 5" class="gallery-marquee-img">
+          <img src="img/i16.jpg" alt="Galería 5" class="gallery-marquee-img">
+          <!-- Puedes agregar más imágenes -->
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-5 bg-black text-white">
+    <div class="container" data-aos="zoom-in">
+      <h2 class="text-center neon-text">Contáctame</h2>
+      <form class="mt-4">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Nombre">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Correo">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
+        </div>
+        <button class="btn btn-neon" type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- BOTÓN WHATSAPP -->
+  <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div>
+      <a href="#" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-white mx-2"><i class="bi bi-tiktok"></i></a>
+      <a href="#" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+    </div>
+    <small>&copy; 2025 Manuel Rodriguez Calderon | DJ VERRAKO MIX</small>
+  </footer>
+
+  <!-- JS LIBRARIES -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+  <!-- Scripts personalizados -->
+  <script src="js/script.js"></script>
+</body>
+</html>
