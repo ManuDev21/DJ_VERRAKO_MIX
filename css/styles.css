@@ -18,7 +18,6 @@ section {
 
 h1, h2, h3, h4 {
   font-weight: bold;
-  animation: slideDown 1.5s ease-out;
 }
 
 /* --- NAVBAR --- */
@@ -152,7 +151,6 @@ h1, h2, h3, h4 {
 #links{
   font-size: 20px;
   padding: 10px;
-  animation: slideDown 1.5s ease-out;
 }
 
 .image-stack {
