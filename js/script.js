@@ -52,3 +52,24 @@ function mostrarInfoAdicional() {
   }
 }
 
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_u6aazbv';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Email Enviando';
+      alert('Enviado te respondere lo mas rapido posible!');
+    }, (err) => {
+      btn.value = 'Email Enviando';
+      alert(JSON.stringify(err));
+    });
+});
+
