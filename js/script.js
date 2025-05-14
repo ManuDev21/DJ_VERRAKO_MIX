@@ -42,14 +42,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function mostrarInfoAdicional() {
   const info = document.getElementById('info-adicional');
+  const wily = document.getElementById('dj-wily');
+  const alex = document.getElementById('dj-alex');
 
-  if (info.classList.contains('d-none')) {
-    info.classList.remove('d-none');
-    info.classList.add('fadeInZoom');
-  } else {
-    info.classList.add('d-none');
-    info.classList.remove('fadeInZoom');
-  }
+  const tarjetas = [info, wily, alex];
+
+  tarjetas.forEach(tarjeta => {
+    if (tarjeta.classList.contains('d-none')) {
+      tarjeta.classList.remove('d-none');
+      tarjeta.classList.add('fade-slide-in');
+    } else {
+      tarjeta.classList.add('d-none');
+      tarjeta.classList.remove('fade-slide-in');
+    }
+  });
 }
 
 const btn = document.getElementById('button');
@@ -73,3 +79,18 @@ document.getElementById('form')
     });
 });
 
+  function mostrarPDF() {
+    const container = document.getElementById("pdfContainer");
+    const boton = document.querySelector(".neon-btn1");
+
+    // Alternar visibilidad del contenedor
+    if (container.classList.contains("d-none")) {
+      container.classList.remove("d-none");
+      container.classList.add("fade-slide-in");
+      boton.textContent = "❌ Ocultar Presskit PDF";
+    } else {
+      container.classList.add("d-none");
+      container.classList.remove("fade-slide-in");
+      boton.textContent = "📄 Mostrar Presskit PDF";
+    }
+  }
