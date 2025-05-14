@@ -221,6 +221,20 @@ h1, h2, h3, h4 {
   box-shadow: 0 0 20px fuchsia;
 }
 
+.neon-btn1 {
+  border: 2px solid fuchsia;
+  color: fuchsia;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 0 10px fuchsia;
+}
+
+.neon-btn1:hover {
+  background-color: fuchsia;
+  color: black;
+  box-shadow: 0 0 20px fuchsia;
+}
+
 @keyframes rainbowBorder {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -390,4 +404,17 @@ h1, h2, h3, h4 {
   text-shadow: 3px 3px 7px cyan;
 }
 
+.fade-slide-in {
+  animation: fadeSlideIn 1.2s ease forwards;
+}
 
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
