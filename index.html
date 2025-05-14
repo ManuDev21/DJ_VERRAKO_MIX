@@ -41,7 +41,7 @@
           </li>
           <li class="nav-item"><a id="links" class="nav-link neon-hover neon-text glitch" href="#galeria">Galería</a>
           </li>
-          <li class="nav-item"><a id="links" class="nav-link neon-hover neon-text glitch" href="#subT">Contacto</a>
+          <li class="nav-item"><a id="links" class="nav-link neon-hover neon-text glitch" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
@@ -67,9 +67,10 @@
     <div class="container" data-aos="fade-up">
       <div class="row align-items-center">
 
+
         <!-- TARJETA DE INFORMACIÓN -->
         <div class="col-lg-6 mb-4">
-          <div class="card bg-dark text-white p-4 neon-border shadow-lg" style="border-radius: 20px;">
+          <div class="card bg-dark text-white p-4 neon-border shadow-lg paquete-card" style="border-radius: 20px;">
             <h2 class="neon-text glitch mb-3 text-center">Sobre mí</h2>
             <p class="lead text-center">
               Soy <strong>DJ VRRAKO MIX</strong>, fusionando los mejores géneros musicales para disfrutar al máximo.<br>
@@ -80,10 +81,36 @@
               <button class="btn btn-outline-light neon-btn" onclick="mostrarInfoAdicional()">Ver más</button>
             </div>
           </div>
-
           <!-- Tarjeta oculta con más información -->
-          <div id="info-adicional" class="card bg-dark text-white p-4 neon-border shadow-lg mt-4 d-none"
+          <div id="info-adicional" class="card bg-dark text-white p-4 neon-border paquete-card shadow-lg mt-4 d-none"
             style="border-radius: 20px;">
+            <!-- Tarjeta oculta DJ Wily -->
+            <div id="dj-wily" class="card bg-dark text-white p-4 neon-border paquete-card shadow-lg mt-4 d-none"
+              style="border-radius: 20px;">
+              <div class="text-center mb-3">
+                <img src="img/i17.jpg" alt="DJ Wily" class="img-fluid rounded mb-3"
+                  style="max-height: 350px; object-fit: cover;">
+                  <br>
+                  <img src="img/i18.jpg" alt="DJ Wily" class="img-fluid rounded"
+                  style="max-height: 350px; object-fit: cover;">
+              </div>
+              <h3 class="neon-text text-center mb-0">DJ Wily</h3>
+            </div>
+
+            <!-- Tarjeta oculta DJ Alex -->
+            <div id="dj-alex" class="card bg-dark text-white p-4 neon-border paquete-card shadow-lg mt-4 d-none"
+              style="border-radius: 20px;">
+              <div class="text-center mb-3">
+                <img src="img/i20.jpg" alt="DJ Alex" class="img-fluid rounded mb-3"
+                  style="max-height: 350px; width: 465px; object-fit: cover;">
+                  <br>
+                  <img src="img/i19.jpg" alt="DJ Wily" class="img-fluid rounded"
+                  style="max-height: 350px; object-fit: cover;">
+              </div>
+              <h3 class="neon-text text-center mb-0">DJ Alex</h3>
+            </div>
+            <br><br>
+
             <h3 class="neon-text mb-3 text-center">Participaciones destacadas</h5>
               <p class="lead text-center">
                 Participación en la Feria de San Isidro, presentaciones y sonorizaciones con bandas de Rock, Ska, y Rock
@@ -111,7 +138,19 @@
   <!-- MÚSICA -->
   <section id="paquetes" class="py-5 bg-dark text-white">
     <div class="container" data-aos="zoom-in">
-      <h2 class="text-center neon-text mb-5">Paquetes</h2>
+
+      <h2 class="text-center neon-text mb-4">Paquetes</h2>
+
+      <!-- Botón para mostrar PDF -->
+      <div class="text-center mb-4">
+        <button class="btn btn-outline-light neon-btn1" onclick="mostrarPDF()">📄 Mostrar Presskit PDF</button>
+      </div>
+
+      <!-- Contenedor oculto del PDF -->
+      <div id="pdfContainer" class="mb-5 d-none">
+        <iframe src="PRESSKIT VERRAKO MIX 2024.pdf" width="100%" height="600px"
+          style="border: 3px solid fuchsia; border-radius: 12px; box-shadow: 0 0 20px fuchsia;"></iframe>
+      </div>
       <div class="row g-4">
 
         <!-- Paquete 1 -->
@@ -567,26 +606,28 @@
 
 
   <!-- FOOTER -->
-<footer class="bg-dark text-white text-center py-4">
-  <div class="d-flex flex-wrap justify-content-center mb-3 gap-3">
-    <!-- Botones de WhatsApp -->
-    <a href="https://wa.me/7226515643" target="_blank" class="btn btn-success d-flex align-items-center gap-2">
-      <i class="bi bi-whatsapp"></i> Contacto 1
-    </a>
-    <a href="https://wa.me/7203268805" target="_blank" class="btn btn-success d-flex align-items-center gap-2">
-      <i class="bi bi-whatsapp"></i> Contacto 2
-    </a>
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="d-flex flex-wrap justify-content-center mb-3 gap-3">
+      <!-- Botones de WhatsApp -->
+      <a href="https://wa.me/7226515643" target="_blank" class="btn btn-success d-flex align-items-center gap-2">
+        <i class="bi bi-whatsapp"></i> Contacto 1
+      </a>
+      <a href="https://wa.me/7203268805" target="_blank" class="btn btn-success d-flex align-items-center gap-2">
+        <i class="bi bi-whatsapp"></i> Contacto 2
+      </a>
 
-    <!-- Botones de Facebook -->
-    <a href="https://www.facebook.com/share/16VtTHda5z/" target="_blank" class="btn btn-primary d-flex align-items-center gap-2">
-      <i class="bi bi-facebook"></i> Facebook 1
-    </a>
-    <a href="https://www.facebook.com/share/16FvaqRf5H/" target="_blank" class="btn btn-primary d-flex align-items-center gap-2">
-      <i class="bi bi-facebook"></i> Facebook 2
-    </a>
-  </div>
-  <small>&copy; 2025 Manuel Rodriguez Calderon | DJ VERRAKO MIX</small>
-</footer>
+      <!-- Botones de Facebook -->
+      <a href="https://www.facebook.com/share/16VtTHda5z/" target="_blank"
+        class="btn btn-primary d-flex align-items-center gap-2">
+        <i class="bi bi-facebook"></i> Facebook 1
+      </a>
+      <a href="https://www.facebook.com/share/16FvaqRf5H/" target="_blank"
+        class="btn btn-primary d-flex align-items-center gap-2">
+        <i class="bi bi-facebook"></i> Facebook 2
+      </a>
+    </div>
+    <small>&copy; 2025 Manuel Rodriguez Calderon | DJ VERRAKO MIX</small>
+  </footer>
 
 
   <!-- JS LIBRARIES -->
